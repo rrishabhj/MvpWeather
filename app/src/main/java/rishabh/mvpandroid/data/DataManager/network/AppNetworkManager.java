@@ -7,8 +7,6 @@ import javax.inject.Inject;
 
 import io.reactivex.Observable;
 import rishabh.mvpandroid.Utils.Constants;
-import rishabh.mvpandroid.data.Model.TvModelResult;
-import rishabh.mvpandroid.data.Model.TvShowDetail;
 import rishabh.mvpandroid.data.Model.WeatherModel;
 import rishabh.mvpandroid.di.scopes.ApplicationScope;
 import retrofit2.Response;

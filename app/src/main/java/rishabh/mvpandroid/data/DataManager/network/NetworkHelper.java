@@ -1,8 +1,6 @@
 package rishabh.mvpandroid.data.DataManager.network;
 
 import io.reactivex.Observable;
-import rishabh.mvpandroid.data.Model.TvModelResult;
-import rishabh.mvpandroid.data.Model.TvShowDetail;
 import retrofit2.Response;
 import rishabh.mvpandroid.data.Model.WeatherModel;
 

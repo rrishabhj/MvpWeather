@@ -1,4 +1,4 @@
-package rishabh.mvpandroid.ui.SignUp;
+package rishabh.mvpandroid.ui.WeatherMain;
 
 import rishabh.mvpandroid.ui.Base.BaseMvpPresenter;
 
@@ -6,7 +6,7 @@ import rishabh.mvpandroid.ui.Base.BaseMvpPresenter;
  * 26/5/17.
  */
 
-public interface SignUpMvpPresenter<V extends SignUpMvpView> extends BaseMvpPresenter<V>{
+public interface WeatherMvpPresenter<V extends WeatherMvpView> extends BaseMvpPresenter<V>{
 
     void loadWeatherData();
 

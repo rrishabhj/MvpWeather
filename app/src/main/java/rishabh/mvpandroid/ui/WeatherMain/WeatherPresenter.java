@@ -1,6 +1,4 @@
-package rishabh.mvpandroid.ui.SignUp;
-
-import android.os.Handler;
+package rishabh.mvpandroid.ui.WeatherMain;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.annotations.NonNull;
@@ -13,9 +11,7 @@ import javax.inject.Inject;
 import io.reactivex.disposables.CompositeDisposable;
 import retrofit2.Response;
 import rishabh.moviebuzz.R;
-import rishabh.mvpandroid.Utils.CommonUtils;
 import rishabh.mvpandroid.data.DataManager.DataManager;
-import rishabh.mvpandroid.data.Model.TvModelResult;
 import rishabh.mvpandroid.data.Model.WeatherModel;
 import rishabh.mvpandroid.ui.Base.BasePresenter;
 
@@ -23,12 +19,12 @@ import rishabh.mvpandroid.ui.Base.BasePresenter;
  * 26/5/17.
  */
 
-public class SignUpPresenter<V extends SignUpMvpView> extends BasePresenter<V> implements SignUpMvpPresenter<V> {
+public class WeatherPresenter<V extends WeatherMvpView> extends BasePresenter<V> implements WeatherMvpPresenter<V> {
 
     private boolean bottomProgress= false;
 
     @Inject
-    public SignUpPresenter(DataManager dataManager, CompositeDisposable compositeDisposable) {
+    public WeatherPresenter(DataManager dataManager, CompositeDisposable compositeDisposable) {
         super(dataManager, compositeDisposable);
     }
 

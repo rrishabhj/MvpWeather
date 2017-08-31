@@ -20,8 +20,8 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="10dp"
+        android:onClick="OpenAboutActivity"
         android:id="@+id/about_icon"
-        app:srcCompat="@drawable/error"
-        android:visibility="gone"/>
+        app:srcCompat="@drawable/error" />
 
 </RelativeLayout>

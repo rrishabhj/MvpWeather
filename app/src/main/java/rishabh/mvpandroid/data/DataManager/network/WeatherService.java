@@ -4,10 +4,7 @@ import io.reactivex.Observable;
 import java.util.Map;
 import retrofit2.Response;
 import retrofit2.http.GET;
-import retrofit2.http.Path;
 import retrofit2.http.QueryMap;
-import rishabh.mvpandroid.data.Model.TvModelResult;
-import rishabh.mvpandroid.data.Model.TvShowDetail;
 import rishabh.mvpandroid.data.Model.WeatherModel;
 
 /**

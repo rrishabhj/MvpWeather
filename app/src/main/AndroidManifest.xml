@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="rishabh.mvpandroid.ui.SignUp.SignUpActivity"
+            android:name="rishabh.mvpandroid.ui.WeatherMain.WeatherMvpActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,17 +24,8 @@
             </intent-filter>
 
         </activity>
-        <activity
-            android:name="rishabh.mvpandroid.ui.Main.MainActivity"
-            android:screenOrientation="portrait" >
-
-        </activity>
-        <activity
-            android:name="rishabh.mvpandroid.ui.Detail.DetailActivity"
-            android:label="@string/title_activity_detail_show"
-            android:theme="@style/AppTheme" />
         <activity android:name="rishabh.mvpandroid.ui.About"
-            android:parentActivityName="rishabh.mvpandroid.ui.Main.MainActivity">
+            android:parentActivityName="rishabh.mvpandroid.ui.WeatherMain.WeatherMvpActivity">
 
         </activity>
     </application>

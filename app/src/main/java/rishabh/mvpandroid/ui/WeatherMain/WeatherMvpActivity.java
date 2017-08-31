@@ -1,15 +1,13 @@
-package rishabh.mvpandroid.ui.SignUp;
+package rishabh.mvpandroid.ui.WeatherMain;
 
 
-import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.Image;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.Html;
-import android.text.TextWatcher;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -23,18 +21,17 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import rishabh.moviebuzz.R;
 import rishabh.mvpandroid.data.Model.WeatherModel;
+import rishabh.mvpandroid.ui.About;
 import rishabh.mvpandroid.ui.Base.BaseActivity;
-
-import static android.R.color.holo_red_dark;
 
 /**
  * 26/5/17.
  */
 
-public class SignUpActivity extends BaseActivity implements SignUpMvpView {
+public class WeatherMvpActivity extends BaseActivity implements WeatherMvpView {
 
     @Inject
-    SignUpMvpPresenter<SignUpMvpView> loginMvpPresenter;
+    WeatherMvpPresenter<WeatherMvpView> loginMvpPresenter;
 
     @BindView(R.id.city_field)
     TextView cityField;
@@ -61,16 +58,26 @@ public class SignUpActivity extends BaseActivity implements SignUpMvpView {
     ProgressBar progressBar;
     private Typeface weatherFont;
 
+    @BindView(R.id.about_icon)
+    ImageView aboutButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_weather);
 
         getActivityComponent().injectLoginActivity(this);
         ButterKnife.bind(this);
         loginMvpPresenter.onAttach(this);
         setUpActivity();
         loginMvpPresenter.loadWeatherData();
+
+    }
+
+    @OnClick(R.id.about_icon)
+    public void OpenAboutActivity(View view){
+
+        startActivity(new Intent(WeatherMvpActivity.this, About.class));
 
     }
 
